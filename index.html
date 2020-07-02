@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New bootstrap page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="C:\Users\solomonogum\Downloads\bootstrap-4.4.1-dist\bootstrap-4.4.1-dist/css/">
+    <link rel="stylesheet" href="C:\Users\solomonogum\Downloads\fontawesome-free-5.12.0-web\fontawesome-free-5.12.0-web/css/all.css"> -->
+<link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://kit.fontawesome.com/8377440d81.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+        
+
+<section class="row">
+
+  <div style="" class="col-lg-2 col-md-2 vertical">
+    
+    <a class="navbar-brand" href="#">    
+      <img src="img/logo.PNG" class="img-fluid.max.width 100" height="60vh" width="246vw" alt="Jig">
+    </a>
+
+    <div class="bt-5 mt-5" id="accordion" role="tablist">
+      <div class="card bg-transparent">
+        <div class="card-header" role="tab" id="headingOne">
+          <p class="mb-0">
+            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="text-white verticaltext">
+              <i class="fas fa-euro-sign"></i> Transactions
+            </a>
+          </p>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" >
+          <div class="card-body">
+        
+        <a class="dropdown-item  text-white verticaltext2" href="#">Payments</a>
+        <a class="dropdown-item  text-white verticaltext2" href="#">Wallets</a>
+        <a class="dropdown-item  text-white verticaltext2" href="#">Orders</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="card bg-transparent">
+        <div class="card-header" role="tab" id="headingTwo">
+          <p class="mb-0">
+            <a class="collapsed text-white verticaltext" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="far fa-file-image"></i> Accounts
+            </a>
+          </p>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+        
+        <a class="dropdown-item  text-white verticaltext2" href="#">Employees</a>
+        <a class="dropdown-item  text-white verticaltext2" href="#">Users</a>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="card bg-transparent">
+        <div class="card-header" role="tab" id="headingThree">
+          <p class="mb-0">
+            <a class="collapsed text-white verticaltext" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="text-white">
+              <i class="fas fa-users"></i> Venders
+            </a>
+          </p>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+          
+        </div>
+      </div>
+
+      <div class="card bg-transparent">
+        <div class="card-header" role="tab" id="headingThree">
+          <p class="mb-0">
+            <a class="collapsed text-white verticaltext" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="text-white">
+              <i class="fas fa-cog"></i>  Settings
+            </a>
+          </p>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+       
+            <a class="dropdown-item text-white verticaltext2" href="#">Bundles</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="box" class="col-lg-10 col-md-10 ml-3 text-center">
+
+      <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
+         
+        <a class="navbar-brand" href="#"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto mr-5">
+          <a class="nav-item nav-link text-white active" href="#">
+            <img src="img/kitten image.jfif" id="kitten">
+            <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Jennifer</a>
+          <a class="nav-item nav-link" href="#"><i class="fa-bell"></i></a>
+          <a class="nav-item nav-link mr-5" href="#">
+            <button type="button" class="btn-secondary btn-sm logout pl-3 pr-3 mr-5">Logout</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+    
+<div class="container ml-2">
+
+
+  <div class="vendorflex mt-4 mb-2">
+    <h3 class="mr-auto">Vendors</h3>
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn-primary" data-toggle="modal" data-target="#exampleModal">
+  +Add Vendor
+  </button>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog formwidth" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-title" id="exampleModalLabel">Register a vendor account</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <form>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput"><i class="fas fa-user-check"></i> Full name</label>
+              <input type="text" class="form-control form-control-sm formborderless" id="formGroupExampleInput">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput2"><i class="fas fa-industry"></i> Company name</label>
+              <input type="text" class="form-control form-control-sm formborderless" id="formGroupExampleInput2">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput2"><i class="fas fa-map-marker-alt"></i> Company address</label>
+              <input type="text" class="form-control form-control-sm formborderless" id="formGroupExampleInput2">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput2"><i class="fas fa-monument"></i> State</label>
+              <input type="text" class="form-control form-control-sm formborderless" id="formGroupExampleInput2">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput2"><i class="fas fa-envelope"></i> Email</label>
+              <input type="text" class="form-control form-control-sm formborderless" id="formGroupExampleInput2">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput2"><i class="fas fa-phone"></i> Phone</label>
+              <input type="text" class="form-control form-control-sm formborderless" id="formGroupExampleInput2">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput2"><i class="fas fa-key"></i> Password</label>
+              <input type="text" class="form-control form-control-sm formborderless" id="formGroupExampleInput2">
+            </div>
+          </form>
+  
+        </div>
+        <div class="mb-4 buttonwidth" style="align-self:center;">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-block btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+        <form class="container pb-3 mb-2 pr-5" id="needs-validation" novalidate>
+        
+        <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom03">Name</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Name" required>
+              <div class="invalid-feedback">
+                Please provide a name.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom04">Email</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="Email" required>
+              <div class="invalid-feedback">
+                Please provide a valid email address.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom05">Phone number</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Phone number" required>
+              <div class="invalid-feedback">
+                Please provide a valid phone number.
+              </div>
+            </div>
+          </div>
+
+          <!-- When I try to float this right, it adds a margin to the grid underneath and breaks it: -->
+          <button class="btn btn-transparent pt-0 pl-4 pr-4" type="submit">Filter</button>
+        </form>
+        
+        <!-- <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div> -->
+  <div class="">
+
+
+    <div class="row no-gutters">
+      <div class="col-lg-3 col-sm-3">
+        <div class="card">
+          <div class="card-body text-center">
+           
+            <img src="img/icon1.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Eka-Udoh</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon2.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Afro-pot</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-sm-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon1.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Eka-Udoh</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-sm-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon2.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Afro-pot</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-md-3 col-sm-3">
+        
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon1.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Eka-Udoh</h6>
+<p class="gridtext">
+  Shopping complex, University of Uyo, Akwa Ibom State
+</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-sm-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon2.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Afro-pot</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-sm-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon1.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Eka-Udoh</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-sm-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon2.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Afro-pot</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-md-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon1.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Eka-Udoh</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon2.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Afro-pot</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon1.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Eka-Udoh</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3">
+
+        <div class="card">
+          <div class="card-body text-center">
+
+            <img src="img/icon2.PNG" class="img-fluid.max.width 100" height="90vh" alt="">
+            <h6>Afro-pot</h6>
+            <p class="gridtext">
+              Shopping complex, University of Uyo, Akwa Ibom State
+            </p>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  
+
+</div>
+
+</div> 
+
+
+ 
+</section>
+
+<script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

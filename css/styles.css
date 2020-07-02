@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+
+
+.navbar {
+background-color: white;
+}
+
+.box {
+    background-color: #EFEFEF; 
+    height: 100%;
+    width: 83.33vw;
+    /* not sure why this works differently: */
+    /* height: 100vw; */
+}
+
+/* .row {
+    width: 100vw;
+} */
+
+.gridrow {
+    width: 100vw;
+}
+
+
+.navbar-brand {
+
+}
+
+form {
+    background-color: white;
+}
+
+.gridbox {
+    background-color: white;
+    width: .5vw;
+    height: 10vh;
+    margin: .5rem;
+}
+
+/* .logobox {
+    background-color: green;
+    height: 7.5vh;
+
+} */
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: blue;
+    border: 1px solid blue;
+    height: 4vh;
+    /* This for some reason adds a margin to the right of the grid underneath: */
+    /* float: right; */
+}
+
+.vendorflex {
+    display: flex;
+    height: 5vh;
+}
+
+.formwidth {
+width: 30vw;
+height: 20vh;
+}
+
+.buttonwidth {
+width: 20vw;
+}
+
+.col-form-label {
+    font-size: small;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.formborderless {
+width: 100%;
+border-bottom: 2px solid lightgrey;
+border-width: 100%;
+height: 2px;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-radius: 0px;
+}
+
+#kitten {
+    /* border: 5px solid coral; */
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+
+.vertical {
+    height: 125vh;
+    /* float: left; */
+    background-color: #2D3447;
+        }
+
+    .gridtext {
+        font-size: 12px;
+    }
+
+    /* .logoblock {
+        background-color: green;
+        height: 9vh;
+        width: 1vw;
+    } */
+
+.logout {
+    background-color: #BBBAB8;
+    border: none;
+    color: black;
+}
+
+.verticaltext {
+font-weight: bolder;
+text-decoration: none;
+/* text-align: left; */
+}
+
+.verticaltext2 {
+text-align: left;
+
+    }
+
+    .verticaltext2::before {content: "•"; color: blue;
+        display: inline-block; width: 1em;
+        margin-left: -1em}
+
+.card {
+    margin-left: 1rem;
+    /* margin-right: 1rem; */
+    margin-bottom: 1rem;
+} 
+         
+@media only screen and (max-width: 768px) {
+ .vertical {
+height: 100%;
+/* width: 100vw; */
+    }
+
+    .formwidth {
+        width: 70vw;
+        }
+
+        .box {
+            width: 100%;
+        }
+}
